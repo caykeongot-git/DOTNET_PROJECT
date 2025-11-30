@@ -1,0 +1,20 @@
+20110001|Nguyễn Văn An|Nam|8.5|Công Nghệ Thông Tin
+20110002|Trần Thị Bích|Nữ|9.0|Quản Trị Kinh Doanh
+20110003|Lê Hoàng Nam|Nam|7.2|Ngôn Ngữ Anh
+20110004|Phạm Minh Tuấn|Nam|6.5|Công Nghệ Thông Tin
+20110005|Hoàng Thị Lan|Nữ|8.8|Quản Trị Kinh Doanh
+20110006|Đỗ Văn Hùng|Nam|5.5|Công Nghệ Thông Tin
+20110007|Ngô Thị Thu|Nữ|9.5|Ngôn Ngữ Anh
+20110008|Vũ Văn Long|Nam|7.8|Quản Trị Kinh Doanh
+20110009|Bùi Thị Hoa|Nữ|6.0|Ngôn Ngữ Anh
+20110010|Đặng Văn Minh|Nam|8.2|Công Nghệ Thông Tin
+20110011|Trương Thị Mỹ|Nữ|7.5|Quản Trị Kinh Doanh
+20110012|Lý Văn Kiệt|Nam|4.5|Công Nghệ Thông Tin
+20110013|Hồ Thị Thanh|Nữ|8.0|Ngôn Ngữ Anh
+20110014|Dương Văn Tùng|Nam|7.0|Quản Trị Kinh Doanh
+20110015|Cao Thị Phượng|Nữ|6.8|Công Nghệ Thông Tin
+20110016|Phan Văn Khải|Nam|9.2|Ngôn Ngữ Anh
+20110017|Võ Thị Tuyết|Nữ|8.5|Quản Trị Kinh Doanh
+20110018|Đinh Văn Đạt|Nam|5.0|Công Nghệ Thông Tin
+20110019|Lâm Thị Kiều|Nữ|7.9|Ngôn Ngữ Anh
+20110020|Mai Văn Sỹ|Nam|6.2|Quản Trị Kinh Doanh

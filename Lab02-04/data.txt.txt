@@ -1,0 +1,20 @@
+1010001|Nguyen Van An|Ha Noi|5000000
+1010002|Tran Thi Binh|Ho Chi Minh|12500000
+1010003|Le Hoang Nam|Da Nang|300000
+1010004|Pham Thu Ha|Can Tho|8900000
+1010005|Doan Van Hau|Hai Phong|45000000
+1010006|Vo Tong|Nghe An|2000000
+1010007|Hoang Thuy Linh|Vinh Phuc|150000000
+1010008|Cao Thai Son|Hue|560000
+1010009|Tran Thanh|Ho Chi Minh|900000000
+1010010|Hari Won|Han Quoc|34000000
+1010011|Son Tung MTP|Thai Binh|5000000000
+1010012|Nguyen Thuc Thuy Tien|Ho Chi Minh|12000000
+1010013|Le Duong Bao Lam|Dong Nai|7500000
+1010014|Hieu Thu Hai|Ho Chi Minh|6800000
+1010015|Mono Viet Hoang|Thai Binh|4200000
+1010016|Chi Pu|Ha Noi|11000000
+1010017|Den Vau|Quang Ninh|3500000
+1010018|Bich Phuong|Quang Ninh|9900000
+1010019|Truc Nhan|Binh Dinh|8500000
+1010020|My Tam|Da Nang|250000000
