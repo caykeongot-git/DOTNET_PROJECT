@@ -56,107 +56,114 @@
             // 
             lblTitle.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = Color.Blue;
-            lblTitle.Location = new Point(12, 9);
+            lblTitle.Location = new Point(10, 7);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(1199, 115);
+            lblTitle.Size = new Size(1049, 86);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "QUẢN LÝ THÔNG TIN TÀI KHOẢN";
             lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtAccNumber
             // 
-            txtAccNumber.Location = new Point(428, 127);
+            txtAccNumber.Location = new Point(374, 95);
+            txtAccNumber.Margin = new Padding(3, 2, 3, 2);
             txtAccNumber.Name = "txtAccNumber";
-            txtAccNumber.Size = new Size(608, 27);
-            txtAccNumber.TabIndex = 1;
+            txtAccNumber.Size = new Size(532, 23);
+            txtAccNumber.TabIndex = 2;
             // 
             // txtName
             // 
-            txtName.Location = new Point(428, 183);
+            txtName.Location = new Point(374, 137);
+            txtName.Margin = new Padding(3, 2, 3, 2);
             txtName.Name = "txtName";
-            txtName.Size = new Size(608, 27);
-            txtName.TabIndex = 1;
+            txtName.Size = new Size(532, 23);
+            txtName.TabIndex = 4;
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(428, 235);
+            txtAddress.Location = new Point(374, 176);
+            txtAddress.Margin = new Padding(3, 2, 3, 2);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(608, 27);
-            txtAddress.TabIndex = 1;
+            txtAddress.Size = new Size(532, 23);
+            txtAddress.TabIndex = 6;
             // 
             // txtMoney
             // 
-            txtMoney.Location = new Point(428, 290);
+            txtMoney.Location = new Point(374, 218);
+            txtMoney.Margin = new Padding(3, 2, 3, 2);
             txtMoney.Name = "txtMoney";
-            txtMoney.Size = new Size(608, 27);
-            txtMoney.TabIndex = 1;
+            txtMoney.Size = new Size(532, 23);
+            txtMoney.TabIndex = 8;
             // 
             // lblAccNumber
             // 
             lblAccNumber.AutoSize = true;
             lblAccNumber.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAccNumber.Location = new Point(286, 127);
+            lblAccNumber.Location = new Point(250, 95);
             lblAccNumber.Name = "lblAccNumber";
-            lblAccNumber.Size = new Size(121, 28);
-            lblAccNumber.TabIndex = 2;
+            lblAccNumber.Size = new Size(96, 21);
+            lblAccNumber.TabIndex = 1;
             lblAccNumber.Text = "Số tài khoản";
             // 
             // lblName
             // 
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblName.Location = new Point(261, 179);
+            lblName.Location = new Point(228, 134);
             lblName.Name = "lblName";
-            lblName.Size = new Size(146, 28);
-            lblName.TabIndex = 2;
+            lblName.Size = new Size(117, 21);
+            lblName.TabIndex = 3;
             lblName.Text = "Tên khách hàng";
             // 
             // lblAddress
             // 
             lblAddress.AutoSize = true;
             lblAddress.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAddress.Location = new Point(231, 231);
+            lblAddress.Location = new Point(202, 173);
             lblAddress.Name = "lblAddress";
-            lblAddress.Size = new Size(176, 28);
-            lblAddress.TabIndex = 2;
+            lblAddress.Size = new Size(141, 21);
+            lblAddress.TabIndex = 5;
             lblAddress.Text = "Địa chỉ khách hàng";
             // 
             // lblMoney
             // 
             lblMoney.AutoSize = true;
             lblMoney.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblMoney.Location = new Point(194, 286);
+            lblMoney.Location = new Point(170, 214);
             lblMoney.Name = "lblMoney";
-            lblMoney.Size = new Size(213, 28);
-            lblMoney.TabIndex = 2;
+            lblMoney.Size = new Size(168, 21);
+            lblMoney.TabIndex = 7;
             lblMoney.Text = "Số tiền trong tài khoản";
             // 
             // btnAddorUpdate
             // 
-            btnAddorUpdate.Location = new Point(428, 343);
+            btnAddorUpdate.Location = new Point(374, 257);
+            btnAddorUpdate.Margin = new Padding(3, 2, 3, 2);
             btnAddorUpdate.Name = "btnAddorUpdate";
-            btnAddorUpdate.Size = new Size(164, 29);
-            btnAddorUpdate.TabIndex = 3;
+            btnAddorUpdate.Size = new Size(144, 22);
+            btnAddorUpdate.TabIndex = 9;
             btnAddorUpdate.Text = "Thêm / Cập Nhật";
             btnAddorUpdate.UseVisualStyleBackColor = true;
             btnAddorUpdate.Click += btnAddorUpdate_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(643, 343);
+            btnDelete.Location = new Point(563, 257);
+            btnDelete.Margin = new Padding(3, 2, 3, 2);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(104, 29);
-            btnDelete.TabIndex = 3;
+            btnDelete.Size = new Size(91, 22);
+            btnDelete.TabIndex = 10;
             btnDelete.Text = "Xóa";
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(795, 343);
+            btnExit.Location = new Point(696, 257);
+            btnExit.Margin = new Padding(3, 2, 3, 2);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(96, 29);
-            btnExit.TabIndex = 3;
+            btnExit.Size = new Size(84, 22);
+            btnExit.TabIndex = 11;
             btnExit.Text = "Thoát";
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
@@ -166,10 +173,11 @@
             lvAccount.Columns.AddRange(new ColumnHeader[] { clmSTT, clmAccNumber, clmName, clmAddress, clmMoney });
             lvAccount.FullRowSelect = true;
             lvAccount.GridLines = true;
-            lvAccount.Location = new Point(12, 395);
+            lvAccount.Location = new Point(10, 296);
+            lvAccount.Margin = new Padding(3, 2, 3, 2);
             lvAccount.Name = "lvAccount";
-            lvAccount.Size = new Size(1199, 325);
-            lvAccount.TabIndex = 4;
+            lvAccount.Size = new Size(1050, 245);
+            lvAccount.TabIndex = 13;
             lvAccount.UseCompatibleStateImageBehavior = false;
             lvAccount.View = View.Details;
             lvAccount.SelectedIndexChanged += lvAccount_SelectedIndexChanged;
@@ -196,37 +204,39 @@
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(830, 738);
+            txtTotal.Location = new Point(726, 554);
+            txtTotal.Margin = new Padding(3, 2, 3, 2);
             txtTotal.Name = "txtTotal";
-            txtTotal.Size = new Size(381, 27);
+            txtTotal.Size = new Size(334, 23);
             txtTotal.TabIndex = 1;
             // 
             // lblTotal
             // 
             lblTotal.AutoSize = true;
             lblTotal.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTotal.Location = new Point(718, 737);
+            lblTotal.Location = new Point(628, 553);
             lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(104, 28);
+            lblTotal.Size = new Size(82, 21);
             lblTotal.TabIndex = 2;
             lblTotal.Text = "Tổng tiền: ";
             // 
             // btnOpenFile
             // 
-            btnOpenFile.Location = new Point(942, 343);
+            btnOpenFile.Location = new Point(824, 257);
+            btnOpenFile.Margin = new Padding(3, 2, 3, 2);
             btnOpenFile.Name = "btnOpenFile";
-            btnOpenFile.Size = new Size(94, 29);
-            btnOpenFile.TabIndex = 5;
+            btnOpenFile.Size = new Size(82, 22);
+            btnOpenFile.TabIndex = 12;
             btnOpenFile.Text = "Mở File";
             btnOpenFile.UseVisualStyleBackColor = true;
             btnOpenFile.Click += btnOpenFile_Click;
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
-            ClientSize = new Size(1223, 777);
+            ClientSize = new Size(1070, 583);
             Controls.Add(btnOpenFile);
             Controls.Add(lvAccount);
             Controls.Add(btnExit);
@@ -244,6 +254,7 @@
             Controls.Add(txtAccNumber);
             Controls.Add(lblTitle);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmMain";
             Text = "ACCOUNT MANAGER";
             ResumeLayout(false);
