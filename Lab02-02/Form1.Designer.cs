@@ -50,6 +50,8 @@
             lblValueFemale = new Label();
             label2 = new Label();
             btnOpenFile = new Button();
+            txtSearch = new TextBox();
+            lblSearch = new Label();
             grbInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grvInformation).BeginInit();
             SuspendLayout();
@@ -272,12 +274,32 @@
             btnOpenFile.UseVisualStyleBackColor = true;
             btnOpenFile.Click += btnOpenFile_Click;
             // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(904, 86);
+            txtSearch.Margin = new Padding(3, 2, 3, 2);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(355, 23);
+            txtSearch.TabIndex = 16;
+            txtSearch.TextChanged += txtSearch_TextChanged;
+            // 
+            // lblSearch
+            // 
+            lblSearch.AutoSize = true;
+            lblSearch.Location = new Point(824, 89);
+            lblSearch.Name = "lblSearch";
+            lblSearch.Size = new Size(56, 15);
+            lblSearch.TabIndex = 17;
+            lblSearch.Text = "Tìm kiếm";
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(1271, 455);
+            Controls.Add(lblSearch);
+            Controls.Add(txtSearch);
             Controls.Add(btnOpenFile);
             Controls.Add(lblValueFemale);
             Controls.Add(label2);
@@ -323,5 +345,7 @@
         private Label lblValueFemale;
         private Label label2;
         private Button btnOpenFile;
+        private TextBox txtSearch;
+        private Label lblSearch;
     }
 }

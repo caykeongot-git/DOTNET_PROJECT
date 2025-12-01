@@ -151,7 +151,8 @@ namespace Lab02_04
                 open.Filter = "Text Files|*.txt";
                 open.Title = "Chọn file txt để nhập dữ liệu vào app";
 
-                if (open.ShowDialog() == DialogResult.OK) {
+                if (open.ShowDialog() == DialogResult.OK)
+                {
                     string[] lines = File.ReadAllLines(open.FileName);
                     foreach (string line in lines)
                     {
@@ -174,6 +175,76 @@ namespace Lab02_04
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+        private void btnNap_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtAccNumber.Text) || string.IsNullOrWhiteSpace(txtMoney.Text))
+            {
+                MessageBox.Show("Vui lòng nhập Số tài khoản và Số tiền cần nạp!", "Cảnh báo");
+                return;
+            }
+
+            if (!long.TryParse(txtMoney.Text, out long soTienNap) || soTienNap <= 0)
+            {
+                MessageBox.Show("Số tiền nạp phải là số dương!", "Lỗi");
+                return;
+            }
+
+            ListViewItem item = Search(txtAccNumber.Text);
+
+            if (item != null)
+            {
+                long soDuHienTai = long.Parse(item.SubItems[4].Text);
+
+                long soDuMoi = soDuHienTai + soTienNap;
+
+                item.SubItems[4].Text = soDuMoi.ToString();
+
+                UpdateTotal();
+
+                MessageBox.Show($"Nạp thành công {soTienNap:N0} VND.\nSố dư mới: {soDuMoi:N0} VND", "Success");
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy số tài khoản này!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnRut_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtAccNumber.Text) || string.IsNullOrWhiteSpace(txtMoney.Text))
+            {
+                MessageBox.Show("Vui lòng nhập Số tài khoản và Số tiền cần rút!", "Cảnh báo");
+                return;
+            }
+
+            if (!long.TryParse(txtMoney.Text, out long soTienRut) || soTienRut <= 0)
+            {
+                MessageBox.Show("Số tiền rút phải là số dương!", "Lỗi");
+                return;
+            }
+
+            ListViewItem item = Search(txtAccNumber.Text);
+
+            if (item != null)
+            {
+                long soDuHienTai = long.Parse(item.SubItems[4].Text);
+
+                if (soDuHienTai < soTienRut)
+                {
+                    MessageBox.Show($"Số dư không đủ! (Còn có {soDuHienTai:N0} mà đòi rút {soTienRut:N0}?)", "Thất bại", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                long soDuMoi = soDuHienTai - soTienRut;
+                item.SubItems[4].Text = soDuMoi.ToString();
+                UpdateTotal();
+                MessageBox.Show($"Rút thành công {soTienRut:N0} VND.\nSố dư còn lại: {soDuMoi:N0} VND", "Success");
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy số tài khoản này!", "Lỗi");
             }
         }
     }

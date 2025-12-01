@@ -13,12 +13,28 @@ namespace Lab02_02
             InitializeComponent();
         }
 
-        public void LoadDB()
+        public void LoadDB(string searchKeyword = "")
         {
             using (var db = new StudentsContext())
             {
-                grvInformation.DataSource = db.Students.ToList();
-                ToTal();
+
+                IQueryable<Student> query = db.Students;
+
+                if (!string.IsNullOrEmpty(searchKeyword))
+                {
+                    query = query.Where(s => s.Id.Contains(searchKeyword)
+                                          || s.FullName.Contains(searchKeyword));
+                }
+
+                var listStudents = query.ToList();
+
+                grvInformation.DataSource = listStudents;
+
+                int soNam = listStudents.Count(s => s.Sex == "Nam");
+                int soNu = listStudents.Count(s => s.Sex == "Nữ");
+
+                lblValueMale.Text = soNam.ToString();
+                lblValueFemale.Text = soNu.ToString();
             }
         }
 
@@ -205,6 +221,11 @@ namespace Lab02_02
         private void lblTitle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadDB(txtSearch.Text.Trim());
         }
     }
 }

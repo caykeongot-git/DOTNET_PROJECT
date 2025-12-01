@@ -50,6 +50,8 @@
             txtTotal = new TextBox();
             lblTotal = new Label();
             btnOpenFile = new Button();
+            btnNap = new Button();
+            btnRut = new Button();
             SuspendLayout();
             // 
             // lblTitle
@@ -148,7 +150,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(563, 257);
+            btnDelete.Location = new Point(534, 257);
             btnDelete.Margin = new Padding(3, 2, 3, 2);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(91, 22);
@@ -159,7 +161,7 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(696, 257);
+            btnExit.Location = new Point(642, 257);
             btnExit.Margin = new Padding(3, 2, 3, 2);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(84, 22);
@@ -222,7 +224,7 @@
             // 
             // btnOpenFile
             // 
-            btnOpenFile.Location = new Point(824, 257);
+            btnOpenFile.Location = new Point(742, 257);
             btnOpenFile.Margin = new Padding(3, 2, 3, 2);
             btnOpenFile.Name = "btnOpenFile";
             btnOpenFile.Size = new Size(82, 22);
@@ -231,12 +233,36 @@
             btnOpenFile.UseVisualStyleBackColor = true;
             btnOpenFile.Click += btnOpenFile_Click;
             // 
+            // btnNap
+            // 
+            btnNap.Location = new Point(839, 257);
+            btnNap.Margin = new Padding(3, 2, 3, 2);
+            btnNap.Name = "btnNap";
+            btnNap.Size = new Size(91, 22);
+            btnNap.TabIndex = 14;
+            btnNap.Text = "Nạp Tiền";
+            btnNap.UseVisualStyleBackColor = true;
+            btnNap.Click += btnNap_Click;
+            // 
+            // btnRut
+            // 
+            btnRut.Location = new Point(945, 257);
+            btnRut.Margin = new Padding(3, 2, 3, 2);
+            btnRut.Name = "btnRut";
+            btnRut.Size = new Size(91, 22);
+            btnRut.TabIndex = 14;
+            btnRut.Text = "Rút Tiền";
+            btnRut.UseVisualStyleBackColor = true;
+            btnRut.Click += btnRut_Click;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             ClientSize = new Size(1070, 583);
+            Controls.Add(btnRut);
+            Controls.Add(btnNap);
             Controls.Add(btnOpenFile);
             Controls.Add(lvAccount);
             Controls.Add(btnExit);
@@ -284,5 +310,7 @@
         private TextBox txtTotal;
         private Label lblTotal;
         private Button btnOpenFile;
+        private Button btnNap;
+        private Button btnRut;
     }
 }
