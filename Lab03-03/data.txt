@@ -1,0 +1,50 @@
+SV001,Nguyễn Văn An,Công nghệ thông tin,8.5
+SV002,Trần Thị Bưởi,Ngôn ngữ Anh,9.0
+SV003,Lê Văn Cường,Quản trị kinh doanh,7.2
+SV004,Phạm Thị Dung,Công nghệ thông tin,6.5
+SV005,Hoàng Văn Em,Ngôn ngữ Anh,5.0
+SV006,Vũ Thị Phượng,Quản trị kinh doanh,8.8
+SV007,Đặng Văn Giàu,Công nghệ thông tin,9.5
+SV008,Bùi Thị Hoa,Ngôn ngữ Anh,7.0
+SV009,Đỗ Văn Hùng,Quản trị kinh doanh,4.5
+SV010,Hồ Thị Lan,Công nghệ thông tin,8.0
+SV011,Ngô Văn Khải,Ngôn ngữ Anh,6.8
+SV012,Dương Thị Linh,Quản trị kinh doanh,7.5
+SV013,Lý Văn Minh,Công nghệ thông tin,9.2
+SV014,Phan Thị Ngọc,Ngôn ngữ Anh,8.1
+SV015,Võ Văn Nam,Quản trị kinh doanh,5.5
+SV016,Trịnh Thị Oanh,Công nghệ thông tin,7.8
+SV017,Mai Văn Phúc,Ngôn ngữ Anh,6.0
+SV018,Lương Thị Quyên,Quản trị kinh doanh,8.3
+SV019,Cao Văn Rồng,Công nghệ thông tin,9.9
+SV020,Đinh Thị Sương,Ngôn ngữ Anh,7.1
+SV021,Châu Văn Tài,Quản trị kinh doanh,5.8
+SV022,Bạch Thị Uyên,Công nghệ thông tin,8.7
+SV023,Phùng Văn Vinh,Ngôn ngữ Anh,9.1
+SV024,Tô Thị Xuân,Quản trị kinh doanh,6.9
+SV025,Vương Văn Yên,Công nghệ thông tin,7.4
+SV026,Lâm Thị Ánh,Ngôn ngữ Anh,8.4
+SV027,Đoàn Văn Bình,Quản trị kinh doanh,5.2
+SV028,Tăng Thị Chi,Công nghệ thông tin,6.7
+SV029,Mạc Văn Dũng,Ngôn ngữ Anh,7.6
+SV030,Trương Thị Én,Quản trị kinh doanh,8.9
+SV031,Hà Văn Giang,Công nghệ thông tin,9.3
+SV032,Thái Thị Hà,Ngôn ngữ Anh,6.2
+SV033,Ninh Văn Ích,Quản trị kinh doanh,5.9
+SV034,Khổng Thị Ka,Công nghệ thông tin,8.6
+SV035,Lưu Văn Long,Ngôn ngữ Anh,7.3
+SV036,Phí Thị Mận,Quản trị kinh doanh,9.4
+SV037,Quách Văn Nghị,Công nghệ thông tin,4.8
+SV038,Sầm Thị Na,Ngôn ngữ Anh,7.7
+SV039,Tạ Văn Ơn,Quản trị kinh doanh,6.4
+SV040,Thân Thị Phương,Công nghệ thông tin,8.2
+SV041,Trâu Văn Quý,Ngôn ngữ Anh,5.6
+SV042,Tiêu Thị Rạng,Quản trị kinh doanh,9.7
+SV043,Vi Văn Sáng,Công nghệ thông tin,6.1
+SV044,Xa Thị Thắm,Ngôn ngữ Anh,7.9
+SV045,Yên Văn Uẩn,Quản trị kinh doanh,8.8
+SV046,Chu Thị Vân,Công nghệ thông tin,5.4
+SV047,Hứa Văn Xô,Ngôn ngữ Anh,9.6
+SV048,Nghiêm Thị Ý,Quản trị kinh doanh,7.5
+SV049,Cổ Văn Zũ,Công nghệ thông tin,6.3
+SV050,Tống Thị Hậu,Ngôn ngữ Anh,8.0
