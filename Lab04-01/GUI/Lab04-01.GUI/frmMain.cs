@@ -308,11 +308,13 @@ namespace Lab04_01.GUI
         {
             frmSearchStudent frm = new frmSearchStudent();
             frm.ShowDialog();
+            LoadDB();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             tìmKiếmToolStripMenuItem_Click(sender, e);
+            LoadDB();
         }
     }
 }
