@@ -18,7 +18,7 @@ namespace Lab04_01.GUI
             dgv.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;  
             dgv.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
             dgv.BackgroundColor = Color.White;
-
+             
             dgv.EnableHeadersVisualStyles = false;
             dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);  

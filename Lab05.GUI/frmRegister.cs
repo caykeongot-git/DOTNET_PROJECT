@@ -22,7 +22,7 @@ namespace Lab05.GUI
             InitializeComponent();
             GUIHelper.DecorateDataGridView(dgvStudent);
         }
-
+         
         private void frmRegister_Load(object sender, EventArgs e)
         {
             try

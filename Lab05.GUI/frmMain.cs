@@ -24,7 +24,7 @@ namespace Lab05.GUI
             InitializeComponent();
             GUIHelper.DecorateDataGridView(dgvStudent);
         }
-
+         
         private void frmMain_Load(object sender, EventArgs e)
         {
             dgvStudent.Columns.Clear();

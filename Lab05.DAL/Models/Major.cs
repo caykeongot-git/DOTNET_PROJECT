@@ -10,7 +10,7 @@ namespace Lab05.DAL.Models
 {
     public class Major
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)] public int MajorID { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)] public int MajorID { get; set; } 
 
         [Required] [StringLength(200)] public string Name { get; set; }
 

@@ -23,7 +23,7 @@ namespace Lab05.GUI
                 // nhưng khuyên là nên Drop đi để có bộ dữ liệu mới chuẩn nhất.
                 context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
-
+                 
                 // 2. TẠO KHOA (Để SQL tự sinh ID)
                 var fCNTT = new Faculty { FacultyName = "Công Nghệ Thông Tin" };
                 var fNNA = new Faculty { FacultyName = "Ngôn Ngữ Anh" };

@@ -9,7 +9,7 @@ namespace Lab05.DAL.Models
 {
     public class Faculty
     {
-        [Key] public int FacultyID { get; set; }
+        [Key] public int FacultyID { get; set; } 
 
         [Required] [StringLength(200)] public string FacultyName { get; set; }
 

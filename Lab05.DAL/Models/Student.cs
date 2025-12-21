@@ -10,7 +10,7 @@ namespace Lab05.DAL.Models
 {
     public class Student
     {
-        [Key] [StringLength(20)] public string StudentID { get; set; }
+        [Key] [StringLength(20)] public string StudentID { get; set; } 
 
         [Required] [StringLength(200)] public string FullName { get; set; }
 

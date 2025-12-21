@@ -11,7 +11,7 @@ namespace Lab05.DAL
     public class DBContext : DbContext
     {
         public DbSet<Faculty> Faculties { get; set; }
-        public DbSet<Major> Majors { get; set; }
+        public DbSet<Major> Majors { get; set; } 
         public DbSet<Student> Students { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
