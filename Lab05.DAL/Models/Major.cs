@@ -14,7 +14,7 @@ namespace Lab05.DAL.Models
 
         [Required] [StringLength(200)] public string Name { get; set; }
 
-        public int FacultyID { get; set; }
+        public int FacultyID { get; set; } 
 
         [ForeignKey("FacultyID")]
         public virtual Faculty Faculty { get; set; }
