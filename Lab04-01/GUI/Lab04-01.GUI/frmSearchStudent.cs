@@ -130,9 +130,41 @@ namespace Lab04_01.GUI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            txtStudentID.Clear();
-            txtFullName.Clear();
-            cbFaculty.SelectedIndex = 0;
+            if (string.IsNullOrWhiteSpace(txtStudentID.Text))
+            {
+                MessageBox.Show("Nhập mã sinh viên cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var confirmResult = MessageBox.Show("Bạn có chắc chắn muốn xóa sinh viên này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirmResult == DialogResult.Yes)
+            {
+                using (var db = new DBContext())
+                {
+                    var find = db.Students.Find(txtStudentID.Text);
+
+                    if (find != null)
+                    {
+                        db.Students.Remove(find);
+                        db.SaveChanges();
+
+                        MessageBox.Show("Xóa sinh viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        txtStudentID.Clear();
+                        txtFullName.Clear();
+                        cbFaculty.SelectedIndex = 0;
+
+                        LoadAllStudents();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy sinh viên này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
+
+
 
             LoadAllStudents();
         }
@@ -151,6 +183,30 @@ namespace Lab04_01.GUI
         private void cbFaculty_TextChanged(object sender, EventArgs e)
         {
             btnSearch_Click(sender, e);
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dgvSearch_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvSearch.Rows[e.RowIndex];
+
+                txtStudentID.Text = row.Cells["MSSV"].Value?.ToString();
+                txtFullName.Text = row.Cells["HoTen"].Value?.ToString();
+                using (var db = new DBContext())
+                {
+                    var student = db.Students.Find(txtStudentID.Text);
+                    if (student != null)
+                    {
+                        cbFaculty.SelectedValue = student.FacultyID;
+                    }
+                }
+            }
         }
     }
 }
